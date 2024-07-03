@@ -16,10 +16,10 @@ class HomeScreen extends ConsumerStatefulWidget {
 }
 
 class HomeScreenState extends ConsumerState {
-  List cities = ['Dhaka', 'Khulna', 'Mumbai', 'London', 'Tottenham'];
   TextEditingController newCity = TextEditingController();
   @override
   Widget build(BuildContext context) {
+    ref.watch(refresh);
     return Scaffold(
       appBar: AppBar(
         leading: Builder(
@@ -94,7 +94,8 @@ class HomeScreenState extends ConsumerState {
                                       child: const Text('Submit'),
                                       onPressed: () {
                                         setState(() {
-                                          cities.add(newCity.text);
+                                          GlobalSharables.cities
+                                              .add(newCity.text);
                                         });
 
                                         Navigator.pop(context);
@@ -144,9 +145,10 @@ class HomeScreenState extends ConsumerState {
                   },
                   child: ListView.builder(
                     shrinkWrap: true,
-                    itemCount: cities.length,
+                    itemCount: GlobalSharables.cities.length,
                     itemBuilder: (context, index) {
-                      return CitiesWeatherWidget(city: cities[index]);
+                      return CitiesWeatherWidget(
+                          city: GlobalSharables.cities[index], index: index);
                     },
                   ),
                 ),
