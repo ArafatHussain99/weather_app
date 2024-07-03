@@ -5,7 +5,7 @@ This is a demo project for Zaynax Limited. The app showcases a weather applicati
 ## Features
 
 - **Home Screen**: Displays weather information for five pre-added cities.
-- **Add/**: Users can add new cities.
+- **Add**: Users can add new cities.
 - **Update/Delete Cities**: Users can long-press on the cards to update existing cities, or delete cities.
 - **Language Change**: Users can change the app's language using a switch in the drawer. Currently, this change affects the drawer and the home screen logo.
 - **Pull to Refresh**: Users can update the weather data by pulling down on the home screen.
