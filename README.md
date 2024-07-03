@@ -30,7 +30,7 @@ This is a demo project for Zaynax Limited. The app showcases a weather applicati
 ![alt text](image-4.png)
 ![alt text](image-5.png)
 
-### 5. Update and Delete Modal Bottom Sheet
+### 5. Update and Delete Modal Bottom Sheet (Long press on the cards to view the bottom sheet)
 
 ![alt text](image-6.png)
 
