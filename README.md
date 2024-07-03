@@ -30,16 +30,21 @@ This is a demo project for Zaynax Limited. The app showcases a weather applicati
 ![alt text](image-4.png)
 ![alt text](image-5.png)
 
-### 5. Update and Delete Modal Bottom Sheet (Long press on the cards to view the bottom sheet)
+### 5. Add a new city
+
+![alt text](image-10.png)
+![alt text](image-11.png)
+
+### 6. Update and Delete Modal Bottom Sheet (Long press on the cards to view the bottom sheet)
 
 ![alt text](image-6.png)
 
-### 6. Updating
+### 7. Updating
 
 ![alt text](image-7.png)
 ![alt text](image-8.png)
 
-### 7. Deleting
+### 8. Deleting
 
 ![alt text](image-9.png)
 
