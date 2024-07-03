@@ -38,6 +38,7 @@ dependencies:
   riverpod_annotation: ^2.3.5
   fluttertoast: ^8.2.6
   http: ^1.2.1
+  translator: ^1.0.0
 
 dev_dependencies:
   flutter_test:
