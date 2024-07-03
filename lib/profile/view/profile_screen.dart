@@ -11,6 +11,14 @@ class ProfileScreen extends StatefulWidget {
 class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Profile Screen'),
+        centerTitle: true,
+      ),
+      body: const Center(
+        child: Text('Sorry, you can not update the profile at the moment..'),
+      ),
+    );
   }
 }
