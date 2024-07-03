@@ -143,7 +143,12 @@ class HomeScreenState extends ConsumerState {
                   onRefresh: () async {
                     ref.read(refresh.notifier).state = ref.read(refresh) + 1;
                   },
-                  child: ListView.builder(
+                  child: GridView.builder(
+                    gridDelegate:
+                        const SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 2,
+                            crossAxisSpacing: 16,
+                            childAspectRatio: 0.8),
                     shrinkWrap: true,
                     itemCount: GlobalSharables.cities.length,
                     itemBuilder: (context, index) {
